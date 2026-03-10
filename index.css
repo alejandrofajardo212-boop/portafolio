@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    float: left;
+    font-size: 22px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero-text {
+    width: 60%;
+    float: left;
+    padding-top: 30px;
+}
+
+.hero-image {
+    width: 35%;
+    float: right;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-text h2 {
+    font-size: 45px;
+    color: #ff4500; 
+    margin-bottom: 15px;
+}
+
+.btn-red {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.about-me {
+    background-color: #ff4500;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.signature {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    text-align: center; 
+}
+
+.card {
+    display: inline-block; 
+    vertical-align: top;  
+    width: 30%;            
+    margin: 10px;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+}
+
+.btn-card {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
