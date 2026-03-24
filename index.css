@@ -1,148 +1,237 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+html, body {
+  height: 100vh; 
+  overflow: hidden; 
+  font-family:
+    "Segoe UI", "Helvetica Neue", sans-serif; 
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-}
-
-
-.clearfix {
-    clear: both;
-}
-
-header {
-    background-color: white;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.logo {
-    float: left;
-    font-size: 22px;
-}
 
 nav {
-    float: right;
+  background: #2c2c2c; 
+  padding: 10px 40px 10px; 
+  overflow: hidden; 
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 15px;
+.nombre-nav {
+  float: left; 
+  color: white; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 1.6; 
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+.nombre-nav strong {
+  font-weight: 700; 
 }
 
-.hero {
-    padding: 50px 0;
+.enlaces-nav {
+  float: right; 
+  line-height: 1.6; 
+ margin-top: 5px; 
 }
 
-.hero-text {
-    width: 60%;
-    float: left;
-    padding-top: 30px;
+.enlaces-nav a {
+  color: #cccccc; 
+  text-decoration: none; 
+  margin-left: 20px; 
+  font-size: 20px; 
+  letter-spacing: 0.5px; 
+  transition: color 0.2s; 
 }
 
-.hero-image {
-    width: 35%;
-    float: right;
+.enlaces-nav a:hover,
+.enlaces-nav a.activo {
+  color: white; 
+  font-weight: 600; 
 }
 
-.hero-image img {
-    width: 100%;
+
+main {
+  height: calc(
+    100vh - 40px
+  ); 
+  overflow-y: auto; 
 }
 
-.hero-text h2 {
-    font-size: 45px;
-    color: #ff4500; 
-    margin-bottom: 15px;
+
+.inicio {
+  background: #ffffff; 
+  padding: 60px 60px 20px 10px; 
+  overflow: hidden; 
+  min-height: 420px; 
 }
 
-.btn-red {
-    display: inline-block;
-    background-color: #ff4500;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 3px;
+.imagen-inicio {
+  float: left; 
+  width: 45%; 
+  text-align: center; 
+  padding-top: 10px; 
 }
 
-.about-me {
-    background-color: #ff4500;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
+.imagen-inicio img {
+  width: 100%; 
+  max-width: 400px; 
 }
 
-.profile-pic img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-bottom: 20px;
+.texto-inicio {
+  float: right; 
+  width: 50%; 
+  padding-top: 40px; 
 }
 
-.signature {
-    margin-top: 15px;
-    font-style: italic;
+.texto-inicio h1 {
+  font-size: 52px; 
+  font-weight: 700; 
+  color: #f39c69; 
+  margin-bottom: 20px; 
+  line-height: 1.1; 
+  margin-left: -200px; 
 }
 
-.projects {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #f9f9f9;
+.texto-inicio p {
+  font-size: 30px; 
+  color: #555;
+  line-height: 1.7; 
+  margin-bottom: 30px; 
+  margin-left: -200px; 
 }
 
-.section-title {
-    font-size: 35px;
-    margin-bottom: 40px;
+.boton-rojo-arriba {
+  background: #f37a34; 
+  color: white; 
+  border: none; 
+  padding: 14px 28px;
+  font-size: 30px; 
+  font-weight: 600;
+  border-radius: 4px; 
+  cursor: pointer; 
+  text-decoration: none; 
+  transition: background 0.2s; 
+  margin-left: -200px; 
 }
 
-.projects-container {
-    text-align: center; 
+.boton-rojo {
+  background: #f37a34; 
+  color: white; 
+  border: none; 
+  padding: 14px 28px; 
+  font-size: 30px; 
+  font-weight: 600; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  text-decoration: none; 
+  transition: background 0.2s; 
 }
 
-.card {
-    display: inline-block; 
-    vertical-align: top;  
-    width: 30%;            
-    margin: 10px;
-    background: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: left;
+.boton-rojo:hover {
+  background: #e75b0a; 
 }
 
-.card img {
-    width: 100%;
+
+.quien-soy {
+  background: #f37a34; 
+  padding: 60px 80px; 
+  text-align: center; 
 }
 
-.btn-card {
-    display: inline-block;
-    background-color: #ff4500;
-    color: white;
-    padding: 5px 15px;
-    text-decoration: none;
-    margin-top: 10px;
+.foto-perfil {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  border: 6px solid white; 
+  margin: 0 auto 40px auto;
+  object-fit: cover; 
 }
+
+.quien-soy blockquote {
+  font-size: 30px; 
+  color: white; 
+  line-height: 1.7; 
+  max-width: 800px; 
+  margin: 0 auto 16px auto;
+}
+
+.quien-soy cite {
+  color: rgba(255, 255, 255, 0.8); 
+  font-size: 15px; 
+  font-style: italic; 
+}
+
+
+.proyectos {
+  background: #f2f2f2; 
+  padding: 60px 40px; 
+  overflow: hidden; 
+}
+
+.proyectos h2 {
+  font-size: 38px; 
+  font-weight: 700; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 40px; 
+}
+
+.contenedor-tarjetas {
+  overflow: hidden; 
+}
+
+.tarjeta {
+  float: left; 
+  width: 23%; 
+  margin-right: 2%; 
+  background: white;
+  border-radius: 4px; 
+  overflow: hidden; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.tarjeta:last-child {
+  margin-right: 0; 
+}
+
+.tarjeta img {
+  width: 100%; 
+  height: 320px; 
+  object-fit: cover; 
+}
+
+.cuerpo-tarjeta {
+  padding: 20px 16px; 
+}
+
+.cuerpo-tarjeta h3 {
+  font-size: 20px;
+  font-weight: 600; 
+  color: #333; 
+  margin-bottom: 12px; 
+}
+
+.cuerpo-tarjeta p {
+  font-size: 20px; 
+  color: #777; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
+}
+
 
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: #2c2c2c; 
+  color: #aaa; 
+  font-size: 12px;
+   padding: 20px 40px 43px; 
+  text-align: center;  
+
+  
+}
+
+.footer {
+  margin-left: 1400px; 
 }
