@@ -1,84 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio - Diego Fajardo</title>
+    <title>Diego Fajardo</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="container">
-            <h1 class="logo">Diego Fajardo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">¿Quién soy?</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </div>
-    </header>
+    
+    <nav>
+        <span class="nombre-nav"><b>Diego Fajardo</b></span>
+        <span class="enlaces-nav">
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#quien">¿Quien soy?</a>
+            <a href="#proyectos">Proyectos</a>
+        </span>
+    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h2>¿Quién soy?</h2>
-                    <p>Soy estudiante de Análisis y Desarrollo de Software en el <strong>SENA</strong>. Me apasiona crear soluciones tecnológicas, aprender nuevas lógicas de programación y construir interfaces funcionales que ayuden a las personas.</p>
-                    <a href="#" class="btn-red">Leer más</a>
-                </div>
-                <div class="hero-image">
-                    <img src="images/foto6.jpg" alt="Programador">
-                </div>
-                <div class="clearfix"></div>
+    
+    <main>
+
+       
+        <section class="inicio" id="inicio">
+            <div class="imagen-inicio">
+                <img style="height: 400px; width: 600px;" src="images/perfil.png" alt="Ilustración">
             </div>
-        </div>
-    </section>
-
-    <section class="about-me">
-        <div class="container">
-            <div class="profile-pic">
-                <img src="images/foto7.png" alt="Diego Fajardo">
+            <div class="texto-inicio">
+                <h1>¿Quien soy?</h1>
+                <p>Soy estudiante de Análisis y Desarrollo de Software en el SENA 
+                    Me apasiona crear soluciones tecnológicas, aprender nuevas lógicas de programación
+                     y construir interfaces funcionales que ayuden a las personas</p>
+                <a href="#quien" class="boton-rojo">Leer más</a>
             </div>
-            <p>Actualmente me encuentro en etapa de formación, fortaleciendo mis habilidades en HTML, CSS, JavaScript y bases de datos. Mi objetivo es convertirme en un desarrollador integral y aportar al crecimiento tecnológico de mi país.</p>
-            <p class="signature">- Diego Fajardo</p>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects">
-        <div class="container">
-            <h2 class="section-title">Mis proyectos</h2>
-            
-            <div class="projects-container">
-                <div class="card">
-                    <img src="images/descarga (1).jpg" alt="Proyecto 1">
-                    <h3>Hoja de vida</h3>
-                    <p>Descripción breve del sistema desarrollado en el SENA.</p>
-                    <a href="#" class="btn-card">Ver proyecto</a>
+        <section class="quien-soy" id="quien">
+            <img class="foto-perfil" src="images/foto6.jpg" alt="Diego Fajardo">
+            <p style="color: white; font-size: 30px;">
+                "Actualmente me encuentro en etapa de formación, fortaleciendo mis habilidades
+                 en HTML, CSS, JavaScript y bases de datos. Mi objetivo es convertirme
+                 en un desarrollador integral y aportar al crecimiento tecnológico de mi país y 
+                 aparte de eso poder ayudar a mi familia economicamente para que vivan tranquilos."
+            <p style="color: white; font-size: 30px;">- Diego Fajardo</p>
+        </section>
+
+        
+        <section class="proyectos" id="proyectos">
+            <h2>Mis proyectos</h2>
+            <div class="contenedor-tarjetas">
+
+                <div class="tarjeta">
+                    <img src="images/es1.jpg" alt="Proyecto 1">
+                    <div class="cuerpo-tarjeta">
+                        <h3>Proyecto 1</h3>
+                        <p>Proyecto de CSS puro donde se construye una ciudad con multiples edificios
+                            y casas usando solo div y estilos de color, gradientes y sombras.</p>
+                        <a href="#" class="boton-rojo">Ver proyecto</a>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <img src="images/img1.jpg" alt="Proyecto 2">
-                    <h3>Pagina Web</h3>
-                    <p>Análisis de requisitos y documentación técnica.</p>
-                    <a href="#" class="btn-card">Ver proyecto</a>
+                <div class="tarjeta">
+                    <img src="images/foto3.jpg" alt="Proyecto 2">
+                    <div class="cuerpo-tarjeta">
+                        <h3>Proyecto 2</h3>
+                        <p>Proyecto para aprender a usar diferentes colores y tonalidades en CSS,
+                            creando marcadores de colores con gradientes y sombras.</p>
+                        <a href="#" class="boton-rojo">Ver proyecto</a>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <img src="images/img8.avif" alt="Proyecto 3">
-                    <h3>Widget Clima</h3>
-                    <p>Interfaz interactiva creada con lógica de programación.</p>
-                    <a href="#" class="btn-card">Ver proyecto</a>
+                <div class="tarjeta">
+                    <img src="images/es2.jpg" alt="Proyecto 3">
+                    <div class="cuerpo-tarjeta">
+                        <h3>Proyecto 3</h3>
+                        <p>Proyecto donde se construye un piano funcional visualmente usando
+                            solo HTML y CSS, practicando layouts y proporciones. 🎹</p>
+                        <a href="#" class="boton-rojo">Ver proyecto</a>
+                    </div>
                 </div>
+
+                <div class="tarjeta">
+                    <img src="images/es3.webp" alt="Proyecto 4">
+                    <div class="cuerpo-tarjeta">
+                        <h3>Proyecto 4</h3>
+                        <p>Proyecto donde se dibuja una carita de gato completamente con CSS,
+                            practicando bordes, border-radius y formas geométricas.</p>
+                        <a href="#" class="boton-rojo">Ver proyecto</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>Copyright © 2026. Todos los derechos reservados.</p>
-    </footer>
+        
+        <footer>
+           <b><p class="footer">© 2026 Diego Fajardo — Todos los derechos reservados</p> </b>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
 
 </body>
 </html>
